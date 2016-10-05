@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs
+    layout_height="wrap_content"
+    layout_width="wrap_content">
+
+    <tab
+        icon="@drawable/house"
+        id="@+id/homeTab"
+        title="Home" />
+
+    <tab
+        icon="@drawable/heart"
+        id="@+id/likeTab"
+        title="Like" />
+
+    <tab
+        icon="@drawable/share"
+        id="@+id/shareTab"
+        title="Share" />
+</tabs>
+
