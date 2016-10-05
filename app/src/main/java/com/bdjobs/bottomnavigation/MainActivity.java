@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         manager = getFragmentManager();
         FragmentA fa = new FragmentA();
         android.app.FragmentTransaction transaction = manager.beginTransaction();
+        transaction.setCustomAnimations(R.animator.slide_in_left,R.animator.slide_out_left);
         transaction.add(R.id.fragmentHolder,fa,"A");
         transaction.commit();
 
@@ -26,18 +27,21 @@ public class MainActivity extends AppCompatActivity {
                 if (tabId == R.id.homeTab) {
                     FragmentA fa = new FragmentA();
                     android.app.FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.setCustomAnimations(R.animator.slide_in_left,R.animator.slide_out_left);
                     transaction.replace(R.id.fragmentHolder,fa,"A");
                     transaction.commit();
                 }
                 else if (tabId == R.id.likeTab) {
                     FragmentB fb = new FragmentB();
                     android.app.FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.setCustomAnimations(R.animator.slide_in_left,R.animator.slide_out_left);
                     transaction.replace(R.id.fragmentHolder,fb,"B");
                     transaction.commit();
                 }
                 else if (tabId == R.id.shareTab) {
                     FragmentC fc = new FragmentC();
                     android.app.FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.setCustomAnimations(R.animator.slide_in_left,R.animator.slide_out_left);
                     transaction.replace(R.id.fragmentHolder,fc,"A");
                     transaction.commit();
                 }
